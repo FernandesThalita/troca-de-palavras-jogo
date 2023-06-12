@@ -1,139 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Troca Palavras Jogo</title>
-    
- <style>
-    footer {
-      background-color: #262524;
-      padding: 10px;
-      text-align: center;
-      color: #f0860d;
-      font-size: 18px;
-      font-weight: 600;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-    }
 
-    footer,
-    header b {
-      color: #47d9f6;
-    }
+    <style>
+      footer,
+      header {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #1a1919;
+        
+        overflow-x: hidden;
+      }
+      footer {
+        background-color: #262524;
+        padding: 10px;
+        text-align: center;
+        color: #47d9f6;
+        font-size: 18px;
+        font-weight: 600;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      background-color: #262524;
-      padding: 10px;
-      align-items: center;
-    }
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #262524;
+        padding: 10px;
+        align-items: center;
+      }
 
-    header #link-home {
-      font-weight: 500;
-      text-decoration: none;
-      color: #fff;
-      background-color: #0dcaf0;
-      padding: 10px 20px 10px 20px;
-      border-radius: 5px;
-      box-shadow: 0px 3px 0px 0px #0a90ab;
-    }
+      header #link-home {
+        font-weight: 500;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0dcaf0;
+        padding: 10px 20px 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0px 3px 0px 0px #0a90ab;
+      }
 
-    header #link-home:hover {
-      background-color: #47d9f6;
-      color: #05859f;
-      transition: 0.5s;
-    }
+      header #link-home:hover {
+        background-color: #47d9f6;
+        color: #05859f;
+        transition: 0.5s;
+      }
 
-    header #link-home:active {
-      box-shadow: none;
-    }
+      header #link-home:active {
+        box-shadow: none;
+      }
 
-    /* header */
-    .container-header {
-      display: flex;
-      align-items: center;
-    }
+      /* header */
+      .container-header {
+        display: flex;
+        align-items: center;
+      }
 
-    .logo {
-      width: 50px;
-      margin-right: 10px;
-    }
+      .logo {
+        width: 50px;
+        margin-right: 10px;
+      }
 
-    .logo img {
-      width: 100%;
-      height: auto;
-    }
+      .logo img {
+        width: 100%;
+        height: auto;
+      }
 
-    .title {
-      margin-left: 5px;
-      color: #f0860d;
-      font-size: 20px;
-      font-weight: 600;
-    }
+      .title {
+        margin-left: 5px;
+        color: #f0860d;
+        font-size: 20px;
+        font-weight: 600;
+      }
 
-    h1 {
-      color: #00a9ab;
-    }
+      h1 {
+        color: #00a9ab;
+      }
 
-    p {
-      color: #ffcc7e;
-    }
+      p {
+        color: #ffcc7e;
+      }
 
-    input[type="text"],
-    button {
-      background-color: #00a9ab;
-      color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      margin-bottom: 10px;
-    }
+      input[type="text"],
+      button {
+        background-color: #00a9ab;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
+      }
 
-    button:hover {
-      background-color: #47d9f6;
-      transition: 0.5s;
-    }
+      button:hover {
+        background-color: #47d9f6;
+        transition: 0.5s;
+      }
 
-    footer p {
-      color: #ffcc7e;
-    }
-  </style>
-</head>
-<body>
+      footer,
+      header b,
+      p {
+        color: #47d9f6;
+      }
+      main{
+        
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 11px 23px 10px rgba(0,0,0,0.25);
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
     <header>
       <div class="container-header">
         <div class="logo">
-         <a href="index.html"> <img src="img/logo.png" alt="Logo" width="50"></a>
+          <a href="index.html">
+            <img src="img/logo.png" alt="Logo" width="50"
+          /></a>
         </div>
-        <div class="title">
-          Play_ <b>Here</b>
-        </div>
+        <div class="title">Play_ <b>Here</b></div>
       </div>
-        <div>
-        <a id="link-home" href="https://fernandesthalita.github.io/Home-Play_Here/">Home</a>
+      <div>
+        <a
+          id="link-home"
+          href="https://fernandesthalita.github.io/Home-Play_Here/"
+          >Home</a
+        >
       </div>
     </header>
-    
-    <h1>Bem vindo(a) ao jogo dos Filmes e veja o que acontece!</h1>
 
-    <p>"A Hora do <strong > Rush</strong>"</p>
-    <p>"O <strong >Mágico</strong> de OZ"</p>
-    <p>"11 homens e um <strong >segredo</strong>"</p>
-    <p>"<strong >Planeta</strong> dos macacos"</p>
-    <p>"Procurando <strong >Nemo</strong>"</p>
-    <br>
-    <input type="text" id="palavra" placeholder="Digite uma palavra"><br>
-    <button onclick="muda_palavra()">Mudar</button>
-    <br>
-    <!-- <button onclick="game_word()">Mudar2</button> -->
-    
+    <main>
+      <h1>Bem vindo(a) ao jogo dos Filmes e veja o que acontece!</h1>
+
+      <p>"A Hora do <strong> Rush</strong>"</p>
+      <p>"O <strong>Mágico</strong> de OZ"</p>
+      <p>"11 homens e um <strong>segredo</strong>"</p>
+      <p>"<strong>Planeta</strong> dos macacos"</p>
+      <p>"Procurando <strong>Nemo</strong>"</p>
+      <br />
+      <input type="text" id="palavra" placeholder="Digite uma palavra" /><br />
+      <button onclick="muda_palavra()">Mudar</button>
+      <br />
+      <!-- <button onclick="game_word()">Mudar2</button> -->
+    </main>
+
     <footer>
       <p>&copy; 2023 Play_ <b>Here</b>. Todos os direitos reservados.</p>
     </footer>
-</body>
-    <script src="codigo.js"></script>
+  </body>
+  <script src="codigo.js"></script>
 </html>
